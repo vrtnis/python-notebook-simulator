@@ -1,0 +1,169 @@
+<html><head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <style>
+        body { max-width: 1000px; margin: auto; }
+        pre code { color: white; background: black; padding: 8px; }
+        .cell-id { font-weight: bold; margin-bottom: 10px; }
+        .cell-container { 
+            border: 2px solid #cccccc; 
+            border-radius: 12px; 
+            padding: 15px; 
+            margin: 20px 0; 
+            background-color #f0f0f0; 
+        }
+    </style>
+    </head><body>
+    <div>
+        <button onclick="showGraph('dependency-graph')">Show Dependency Graph</button>
+        <button onclick="showGraph('execution-order-graph')">Show Execution Order</button>
+        <div id="dependency-graph" style="display:none;">
+            <img src="dependency_graph.png" alt="Dependency Graph">
+        </div>
+        <div id="execution-order-graph" style="display:none;">
+            <img src="execution_order_graph.png" alt="Execution Order Graph">
+        </div>
+    </div>
+    <script>
+        function showGraph(graphId) {
+            document.getElementById('dependency-graph').style.display = graphId === 'dependency-graph' ? 'block' : 'none';
+            document.getElementById('execution-order-graph').style.display = graphId === 'execution-order-graph' ? 'block' : 'none';
+        }
+    </script>
+    
+        <div class="cell-container">
+            <div class="cell-id">cell1</div>
+            <pre><code class="language-python"># Import the required pandas library
+import pandas as pd
+
+# Initialize a sample dataset
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'Diana', 'Eve'],
+    'Age': [24, 27, 22, 32, 29],
+    'Department': ['Sales', 'Marketing', 'Sales', 'IT', 'Marketing'],
+    'Salary': [48000, 52000, 47000, 61000, 56000]
+}
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Display the DataFrame
+print("Initial DataFrame:")
+print(df)
+##</code></pre>
+            <strong>Output of cell1:</strong>
+            <pre><code class="language-python">Initial DataFrame:
+      Name  Age Department  Salary
+0    Alice   24      Sales   48000
+1      Bob   27  Marketing   52000
+2  Charlie   22      Sales   47000
+3    Diana   32         IT   61000
+4      Eve   29  Marketing   56000
+</code></pre>
+        </div>
+        
+        <div class="cell-container">
+            <div class="cell-id">cell2</div>
+            <pre><code class="language-python"># Analyze basic statistics of numerical columns
+print("\nBasic Stats:")
+print(df.describe())
+##</code></pre>
+            <strong>Output of cell2:</strong>
+            <pre><code class="language-python">
+Basic Stats:
+             Age        Salary  Adjusted Salary
+count   5.000000      5.000000         5.000000
+mean   26.800000  52800.000000     55440.000000
+std     3.962323   5805.170109      6095.428615
+min    22.000000  47000.000000     49350.000000
+25%    24.000000  48000.000000     50400.000000
+50%    27.000000  52000.000000     54600.000000
+75%    29.000000  56000.000000     58800.000000
+max    32.000000  61000.000000     64050.000000
+</code></pre>
+        </div>
+        
+        <div class="cell-container">
+            <div class="cell-id">cell3</div>
+            <pre><code class="language-python"># Calculate the average salary per department
+avg_salary_per_dept = df.groupby('Department')['Salary'].mean()
+
+print("\nAverage Salary per Department:")
+print(avg_salary_per_dept)
+##</code></pre>
+            <strong>Output of cell3:</strong>
+            <pre><code class="language-python">
+Average Salary per Department:
+Department
+IT           61000.0
+Marketing    54000.0
+Sales        47500.0
+Name: Salary, dtype: float64
+</code></pre>
+        </div>
+        
+        <div class="cell-container">
+            <div class="cell-id">cell4</div>
+            <pre><code class="language-python"># Add a new column to calculate adjusted salaries with a 5% increase
+df['Adjusted Salary'] = df['Salary'] * 1.05
+
+print("\nDataFrame with Adjusted Salaries:")
+print(df)
+##</code></pre>
+            <strong>Output of cell4:</strong>
+            <pre><code class="language-python">
+DataFrame with Adjusted Salaries:
+      Name  Age Department  Salary  Adjusted Salary
+0    Alice   24      Sales   48000          50400.0
+1      Bob   27  Marketing   52000          54600.0
+2  Charlie   22      Sales   47000          49350.0
+3    Diana   32         IT   61000          64050.0
+4      Eve   29  Marketing   56000          58800.0
+</code></pre>
+        </div>
+        
+        <div class="cell-container">
+            <div class="cell-id">cell5</div>
+            <pre><code class="language-python"># Filter out employees older than 25 and create a subset DataFrame
+older_than_25 = df[df['Age'] > 25]
+
+print("\nSubset of Employees Older Than 25:")
+print(older_than_25)
+##</code></pre>
+            <strong>Output of cell5:</strong>
+            <pre><code class="language-python">
+Subset of Employees Older Than 25:
+    Name  Age Department  Salary  Adjusted Salary
+1    Bob   27  Marketing   52000          54600.0
+3  Diana   32         IT   61000          64050.0
+4    Eve   29  Marketing   56000          58800.0
+</code></pre>
+        </div>
+        
+        <div class="cell-container">
+            <div class="cell-id">cell6</div>
+            <pre><code class="language-python"># Generate a final summary report
+summary_report = {
+    "Total Employees": len(df),
+    "Average Age": df['Age'].mean(),
+    "Departments": df['Department'].unique().tolist(),
+    "Highest Salary": df['Salary'].max(),
+    "Lowest Salary": df['Salary'].min(),
+    "Average Salary": df['Salary'].mean(),
+    "Average Salary per Department": avg_salary_per_dept.to_dict()
+}
+
+print("\nSummary Report:")
+print(summary_report)
+##</code></pre>
+            <strong>Output of cell6:</strong>
+            <pre><code class="language-python">
+Summary Report:
+{'Total Employees': 5, 'Average Age': 26.8, 'Departments': ['Sales', 'Marketing', 'IT'], 'Highest Salary': 61000, 'Lowest Salary': 47000, 'Average Salary': 52800.0, 'Average Salary per Department': {'IT': 61000.0, 'Marketing': 54000.0, 'Sales': 47500.0}}
+</code></pre>
+        </div>
+        
+    <script src="http://localhost:35729/livereload.js"></script>
+    </body></html>
