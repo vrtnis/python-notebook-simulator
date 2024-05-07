@@ -10,24 +10,6 @@ Furthermore, the simulator enhances learning by visualizing the dependencies amo
 
 Simply mark each cell in your Python file between ##cell and ## comments. It analyzes dependencies and execute your cells in the right order. Dependency and execution graphs are automatically created. Get your results in an HTML file, including both your output and the graphs.
 
-# Additional Details
-
-### Marking Cells:
-You start by structuring your Python script into segments or "cells," each marked by ##cell at the beginning and ending with ##. These markers help the simulator identify discrete blocks of code that need to be analyzed and executed.
-
-### Dependency Analysis:
-Once the cells are marked, the simulator analyzes the code within each cell to detect dependencies. Dependencies occur when a cell uses data or variables defined in another cell. For instance, if Cell B calculates averages based on data processed in Cell A, Cell B depends on Cell A.
-
-### Determining the Execution Order:
-Based on the identified dependencies, the simulator constructs a directed acyclic graph (DAG). Each node in this graph represents a cell, and directed edges represent dependencies—pointing from prerequisite cells to dependent cells.
-The simulator then performs a topological sort on this DAG to determine a linear order for cell execution. This sort ensures that any given cell is executed only after all its dependencies have been processed, thus maintaining the integrity and correctness of the data throughout the execution process.
-
-### Execution and Visualization:
-With the order determined, the simulator executes the cells sequentially. As it processes each cell, it also dynamically generates graphs that visually map out the dependencies and execution paths. 
-
-### Output in HTML Format:
-After executing all cells, the simulator compiles the outputs and the dependency/execution graphs into an HTML file. This file not only presents the results of the computations but also includes the visual graphs, offering an overview of the entire execution process.
-
 
 ## Getting Started
 
