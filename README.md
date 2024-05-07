@@ -1,6 +1,7 @@
 # Python Notebook Simulator
 
-The **Python Notebook Simulator** is a project designed to help learn how reactive and reproducible execution works in Python notebooks
+The **Python Notebook Simulator** is a project designed to help learn how deterministic and reproducible execution works in Python-like notebook environments.
+
 
 You can:
 
