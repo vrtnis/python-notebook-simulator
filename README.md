@@ -10,6 +10,11 @@ Furthermore, the simulator enhances learning by visualizing the dependencies amo
 
 Simply mark each cell in your Python file between ##cell and ## comments. It analyzes dependencies and execute your cells in the right order. Dependency and execution graphs are automatically created. Get your results in an HTML file, including both your output and the graphs.
 
+## Test Input
+![Test Input](images/test_input.png)
+
+## Test Output
+![Test Output](images/test_output.png)
 
 ### Getting Started
 
