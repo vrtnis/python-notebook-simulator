@@ -1,4 +1,4 @@
-# Python Notebook Simulator
+### Python Notebook Simulator
 
 The **Python Notebook Simulator** is a project designed to help learn how deterministic and reproducible execution works in Python-like notebook environments.
 
@@ -6,14 +6,14 @@ By organizing Python code into well-defined cells using familiar Python comments
 
 Furthermore, the simulator enhances learning by visualizing the dependencies among code cells. This visualization shows how each cell is interconnected, providing insights into the flow of data and the impact of each section of code on subsequent computations. After execution, the simulator generates an HTML file that captures both the output and the visual graphs of cell relationships. 
 
-# How Does It Work?
+### How Does It Work?
 
 Simply mark each cell in your Python file between ##cell and ## comments. It analyzes dependencies and execute your cells in the right order. Dependency and execution graphs are automatically created. Get your results in an HTML file, including both your output and the graphs.
 
 
-## Getting Started
+### Getting Started
 
-### Clone the Repository
+#### Clone the Repository
 
 To get started with the Python Notebook Simulator, you'll first need to clone the repository to your local machine. You can do this by opening your terminal or command prompt and running the following command:
 
@@ -23,13 +23,13 @@ cd python-notebook-simulator
 ```
 
 
-### Install Dependencies 
+#### Install Dependencies 
 
 ```
 pip install -r requirements.txt
 ```
 
-### Run It!
+#### Run It!
 
 ```
 python main.py -i ./examples/testinput.py
