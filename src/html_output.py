@@ -17,7 +17,7 @@ def save_output_to_html(cells, cell_outputs, execution_order):
             border-radius: 12px; 
             padding: 15px; 
             margin: 20px 0; 
-            background-color #f0f0f0; 
+            background-color: #f0f0f0; 
         }
     </style>
     '''
