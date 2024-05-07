@@ -24,3 +24,23 @@ You can:
 
 4. **Share Results:**
    - Get your results in an HTML file, including both your output and the graphs.
+
+
+## Getting Started
+
+### Clone the Repository
+
+To get started with the Python Notebook Simulator, you'll first need to clone the repository to your local machine. You can do this by opening your terminal or command prompt and running the following command:
+
+```bash
+git clone https://github.com/vrtnis/python-notebook-simulator.git
+cd python-notebook-simulator
+
+### Install Dependencies 
+
+pip install -r requirements.txt
+
+
+### Run 
+
+python main.py -i ./examples/testinput.py
