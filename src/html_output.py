@@ -60,4 +60,4 @@ def save_output_to_html(cells, cell_outputs, execution_order):
     output_filepath = "cells_output.html"
     with open(output_filepath, 'w') as html_file:
         html_file.write(html_content)
-    print(f"HTML output saved to {output_filepath}")
+    print(f"HTML output saved to {output_filepath}. Dependency and execution graph images generated and saved.")

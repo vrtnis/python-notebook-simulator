@@ -1,5 +1,4 @@
 # Gitpod configuration file
-# Gitpod configuration file
 
 image: gitpod/workspace-python
 
@@ -11,9 +10,11 @@ tasks:
       pip install pandas
       pip install -r requirements.txt
     command: |
-      echo "Running main.py with testinput.py as example input..."
+      echo "Ready to code!"
       python main.py -i ./examples/testinput.py
+      python -m http.server 8080 --directory . &
+      gp preview $(gp url 8080)/cells_output.html
 
 ports:
   - port: 8080
-    onOpen: open-preview
+    onOpen: ignore
