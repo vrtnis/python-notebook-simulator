@@ -48,7 +48,7 @@ python main.py -i ./examples/testinput.py
 </a>
 
  
-To learn more about concepts such as deterministic and reproducible execution, ask questions and connect with other Python enthusiasts, consider joining the [marimo Discord server](https://discord.gg/JE7nhX6mD8). [marimo](https://marimo.io) revolutionizes how we think about Python notebooks. marimo notebooks are reproducible, extremely interactive, designed for collaboration (git-friendly!), deployable as scripts or apps. 
+To learn more about concepts such as deterministic and reproducible execution, ask questions and connect with other Python enthusiasts, consider joining the [marimo Discord server](https://discord.gg/JE7nhX6mD8). [marimo](https://github.com/marimo-team/marimo) is an **open-source** project that revolutionizes how we think about Python notebooks. marimo notebooks are reproducible, extremely interactive, designed for collaboration (git-friendly!), deployable as scripts or apps. 
 
 
 
