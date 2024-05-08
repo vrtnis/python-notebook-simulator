@@ -2,7 +2,7 @@
 
 The Python Notebook Simulator is a project designed to help learn how deterministic and reproducible execution works in Python-like notebook environments. 
 
-By organizing Python code into well-defined cells using familiar Python comments (e.g., ##cellid and ##), it enables clear and structured execution. The simulator examines the dependencies between these "cells" to establish a fixed order in which they should be executed, ensuring that every run of the script yields the same results under identical conditions.
+By organizing Python code into well-defined cells using familiar Python comments (e.g., ##cellid and ##), it enables clear and structured execution. The simulator examines the dependencies between these "cells" to establish a fixed order in which they should be executed.
 
 Furthermore, the simulator helps visualize dependencies among code cells. This visualization shows how each cell is interconnected, providing insights into the flow of data and the impact of each section of code on subsequent computations. After execution, the simulator generates an HTML file that captures both the output and the visual graphs of cell relationships. 
 
