@@ -19,9 +19,15 @@ It analyzes dependencies and execute your cells in the right order. Dependency a
 
 ### Getting Started
 
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vrtnis/python-notebook-simulator)
 
-## OR
+Opens up a Gitpod, installs all dependencies runs `python main.py -i ./examples/testinput.py` and displays cells_output.html in the Gitpod browser.
+
+<img src="images/simulator_gitpod.png" alt="Join Discord" width="200"/>
+
+
+### Or run it locally
 
 #### Clone the Repository
 
