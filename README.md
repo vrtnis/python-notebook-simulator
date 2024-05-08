@@ -19,8 +19,6 @@ It analyzes dependencies and execute your cells in the right order. Dependency a
 
 ### Getting Started
 
-#### Open in Gitpod
-
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vrtnis/python-notebook-simulator)
 
 ## OR

@@ -1,16 +1,18 @@
 # Gitpod configuration file
+# Gitpod configuration file
 
 image: gitpod/workspace-python
 
 tasks:
   - init: |
       echo "Setting up Python environment..."
+      sudo apt-get update
+      sudo apt-get install -y graphviz
+      pip install pandas
       pip install -r requirements.txt
     command: |
-      echo "Ready to code!"
-      # You can add any command that you want to run after the workspace starts
-      # For example, start a development server:
-      # python manage.py runserver
+      echo "Running main.py with testinput.py as example input..."
+      python main.py -i ./examples/testinput.py
 
 ports:
   - port: 8080
