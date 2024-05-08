@@ -8,7 +8,8 @@ Furthermore, the simulator enhances learning by visualizing the dependencies amo
 
 ### How Does It Work?
 
-Simply mark each cell in your Python file between ##cell and ## comments. It analyzes dependencies and execute your cells in the right order. Dependency and execution graphs are automatically created. Get your results in an HTML file, including both your output and the graphs.
+To define cells in your Python file, simply start each cell with a `##cell` comment and end it with another comment like `##`. This marks the boundaries of each cell.
+It analyzes dependencies and execute your cells in the right order. Dependency and execution graphs are automatically created. Get your results in an HTML file, including both your output and the graphs.
 
 <p align="center">
   <img src="images/test_input.png" alt="Test Input" width="400"/>
@@ -38,4 +39,11 @@ pip install -r requirements.txt
 
 ```
 python main.py -i ./examples/testinput.py
+
 ```
+#### Community
+
+To learn more about concepts such as deterministic and reproducible execution and connect with other Python enthusiasts, consider joining the Marimo Discord. Marimo revolutionizes how we think about Python notebooks by incorporating a fully reactive environment that automatically manages dependencies and ensures consistent outputs.
+
+![Discord Shield](https://discordapp.com/api/guilds/JE7nhX6mD8/widget.png?style=shield)
+
