@@ -20,7 +20,10 @@ It analyzes dependencies and execute your cells in the right order. Dependency a
 ### Getting Started
 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vrtnis/python-notebook-simulator)
+<a href="https://gitpod.io/#https://github.com/vrtnis/python-notebook-simulator">
+    <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" width="150" height="50"/>
+</a>
+
 
 Opens up a Gitpod, installs all dependencies runs `python main.py -i ./examples/testinput.py` and displays cells_output.html in the Gitpod browser.
 
