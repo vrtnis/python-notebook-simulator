@@ -1,3 +1,5 @@
+![Alpha](https://img.shields.io/badge/alpha-8A2BE2)
+
 ### Python Notebook Simulator
 
 The Python Notebook Simulator is a project designed to help learn how deterministic and reproducible execution works in Python-like notebook environments. 
