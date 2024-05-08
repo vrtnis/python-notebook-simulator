@@ -1,10 +1,10 @@
 ### Python Notebook Simulator
 
-The **Python Notebook Simulator** is a project designed to help learn how deterministic and reproducible execution works in Python-like notebook environments.
+The **Python Notebook Simulator** is a project designed to help learn how deterministic and reproducible execution works in Python-like notebook environments. 
 
-By organizing Python code into well-defined cells using familiar Python comments (e.g., ##cellid and ##), it enables clear and structured execution. The simulator examines the dependencies between these cells to establish a fixed order in which they should be executed, ensuring that every run of the script yields the same results under identical conditions — this is the essence of deterministic execution.
+By organizing Python code into well-defined cells using familiar Python comments (e.g., ##cellid and ##), it enables clear and structured execution. The simulator examines the dependencies between these "cells" to establish a fixed order in which they should be executed, ensuring that every run of the script yields the same results under identical conditions.
 
-Furthermore, the simulator enhances learning by visualizing the dependencies among code cells. This visualization shows how each cell is interconnected, providing insights into the flow of data and the impact of each section of code on subsequent computations. After execution, the simulator generates an HTML file that captures both the output and the visual graphs of cell relationships. 
+Furthermore, the simulator helps visualize dependencies among code cells. This visualization shows how each cell is interconnected, providing insights into the flow of data and the impact of each section of code on subsequent computations. After execution, the simulator generates an HTML file that captures both the output and the visual graphs of cell relationships. 
 
 ### How Does It Work?
 
@@ -43,7 +43,7 @@ python main.py -i ./examples/testinput.py
 ```
 #### Community
 
-To learn more about concepts such as deterministic and reproducible execution and connect with other Python enthusiasts, consider joining the Marimo Discord. Marimo revolutionizes how we think about Python notebooks by incorporating a fully reactive environment that automatically manages dependencies and ensures consistent outputs.
+To learn more about concepts such as deterministic and reproducible execution, ask questions and connect with other Python enthusiasts, consider joining the [**marimo Discord server**] (https://discord.gg/JE7nhX6mD8). [marimo](https://marimo.io) revolutionizes how we think about Python notebooks. marimo notebooks are reproducible, extremely interactive, designed for collaboration (git-friendly!), deployable as scripts or apps. 
 
-![Discord Shield](https://discordapp.com/api/guilds/JE7nhX6mD8/widget.png?style=shield)
+
 
