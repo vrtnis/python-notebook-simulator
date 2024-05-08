@@ -6,7 +6,7 @@ By organizing Python code into well-defined cells using familiar Python comments
 
 Furthermore, the simulator helps visualize dependencies among code cells. This visualization shows how each cell is interconnected, providing insights into the flow of data and the impact of each section of code on subsequent computations. After execution, the simulator generates an HTML file that captures both the output and the visual graphs of cell relationships. 
 
-### How Does It Work?
+#### How Does It Work?
 
 To define cells in your Python file, simply start each cell with a `##cell` comment and end it with another comment like `##`. This marks the boundaries of each cell.
 It analyzes dependencies and execute your cells in the right order. Dependency and execution graphs are automatically created. Get your results in an HTML file, including both your output and the graphs.
