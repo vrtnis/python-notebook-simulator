@@ -1,0 +1,17 @@
+# Gitpod configuration file
+
+image: gitpod/workspace-python
+
+tasks:
+  - init: |
+      echo "Setting up Python environment..."
+      pip install -r requirements.txt
+    command: |
+      echo "Ready to code!"
+      # You can add any command that you want to run after the workspace starts
+      # For example, start a development server:
+      # python manage.py runserver
+
+ports:
+  - port: 8080
+    onOpen: open-preview
