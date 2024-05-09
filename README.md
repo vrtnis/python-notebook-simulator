@@ -1,6 +1,6 @@
 ### Python Notebook Simulator
 
-The Python Notebook Simulator is a project I created to better understand concepts, such as deterministic and reproducible execution, within Python-like notebook environments. It is an ongoing experiment and is likely to have flaws!
+The Python Notebook Simulator is a project I created to better understand concepts, such as deterministic and reproducible execution, within Python-like notebook environments. It is an experiment and is likely to have flaws!
 
 The simulator examines the dependencies between "cells" defined by Python comments (e.g., #cellid) to establish a fixed order in which they should be executed.
 
@@ -51,14 +51,9 @@ pip install -r requirements.txt
 python main.py -i ./examples/testinput.py
 
 ```
-#### Community
-
-<a href="https://discord.gg/JE7nhX6mD8" target="_blank">
-    <img src="images/Discord-logo.png" alt="Join Discord" width="200"/>
-</a>
-
+#### Learning More
  
-To learn more about concepts such as deterministic and reproducible execution, ask questions and connect with other Python enthusiasts, consider joining the [marimo Discord server](https://discord.gg/JE7nhX6mD8). [marimo](https://github.com/marimo-team/marimo) is an **open-source** project that revolutionizes how we think about Python notebooks. marimo notebooks are reproducible, extremely interactive, designed for collaboration (git-friendly!), deployable as scripts or apps. 
+This project is just simple experiment but if you are interested in concepts such as deterministic and reproducible execution, ask questions and connect with other Python enthusiasts, I'd suggest joining the [marimo Discord server](https://discord.gg/JE7nhX6mD8). [marimo](https://github.com/marimo-team/marimo) is an **open-source** project that revolutionizes how we think about Python notebooks. marimo notebooks are reproducible, extremely interactive, designed for collaboration (git-friendly!), deployable as scripts or apps. 
 
 
 
